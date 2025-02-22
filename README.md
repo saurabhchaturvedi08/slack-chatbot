@@ -44,3 +44,41 @@ This project demonstrates a Slack chatbot built using [Slack Bolt](https://slack
    - python app.py
 
 - Your Slack app should now connect via Socket Mode. Once active, any message sent in Slack that matches the specified pattern will be processed by the chatbot, which will generate a response using the Groq model and send it back to the channel
+
+## Code Structure Overview
+
+- **app.py:**
+  Contains the main code which:
+
+  - Loads environment variables.
+  - Initializes the Slack Bolt app.
+  - Sets up the LangChain conversation using a custom prompt and conversation memory.
+  - Listens for incoming messages and handles responses.
+
+- .env:
+  Stores API tokens and keys needed for Slack and Groq integration.
+
+- requirements.txt:
+  Lists all the Python packages required for the project.
+
+## Customization
+
+- **System Prompt**:
+  The system prompt at the start of the conversation can be customized in the code to better suit your bot’s personality or purpose.
+
+- **Conversation Memory**:
+  Adjust the ConversationBufferWindowMemory parameter k to change how many previous messages the bot remembers.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests for enhancements and bug fixes.
+
+## Acknowledgments
+
+- Slack Bolt for easy Slack integrations.
+- LangChain for conversational AI frameworks.
+- Groq for providing powerful LLM capabilities.

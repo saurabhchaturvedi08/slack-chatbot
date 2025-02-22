@@ -22,7 +22,7 @@ This project demonstrates a Slack chatbot built using [Slack Bolt](https://slack
 
 1. **Clone the Repository:**
 
-   - git clone https://github.com/yourusername/your-repo.git
+   - git clone https://github.com/saurabhchaturvedi08/slack-chatbot.git
    - cd your-repo
 
 2. **Create a Virtual Environment & Activate It:**
